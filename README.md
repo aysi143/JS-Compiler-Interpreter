@@ -3,10 +3,10 @@
 
 A brief description of what this project does and who it's for
 
--JS-Interpreter is a sandboxed JavaScript interpreter written in JavaScript.
+- JS-Interpreter is a sandboxed JavaScript interpreter written in JavaScript.
 - It allows for execution of arbitrary JavaScript code line by line.
--Execution is completely isolated from the main JavaScript environment.
--Multiple instances of the JS-Interpreter allow for multi-threaded concurrent JavaScript without the use of Web Workers.
+- Execution is completely isolated from the main JavaScript environment.
+- Multiple instances of the JS-Interpreter allow for multi-threaded concurrent JavaScript without the use of Web Workers.
 
 
 
