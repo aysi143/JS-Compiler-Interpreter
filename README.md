@@ -294,6 +294,14 @@ In cases where the code encounters asynchronous API calls (see below), run will 
 
 
 
+
+## Team members
+
+- [@aysi](https://github.com/orgs/GObez-Ethiopia/people/aysi143)
+- [@mente](https://github.com/orgs/GObez-Ethiopia/people/mente123)
+- [@bekalu](https://github.com/orgs/GObez-Ethiopia/people/bekalu23)
+- [@ebno](https://github.com/orgs/GObez-Ethiopia/people/Ebno1)
+
  `Jun 2022`
  `   Gobez Ethiopia`
 
