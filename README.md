@@ -251,6 +251,46 @@ function parser(tokens) {
   return ast;
 }
 
+
+
+## Usage
+
+Start by including the two JavaScript source files:
+
+   ``` <script src="acorn.js"></script>
+    <script src="interpreter.js"></script>
+  
+  ```
+
+Alternatively, use the compressed bundle (80kb):
+
+ ``` <script src="acorn_interpreter.js"></script> ```
+  
+Next, instantiate an interpreter with the JavaScript code that needs to be parsed:
+
+ ```   var myCode = 'var a=1; for(var i=0;i<4;i++){a*=i;} a;';
+    var myInterpreter = new Interpreter(myCode); ```
+  
+Additional JavaScript code may be added at any time (frequently used to interactively call previously defined functions):
+
+  ```  myInterpreter.appendCode('foo();'); ```
+  
+To run the code step by step, call the step function repeatedly until it returns false:
+
+ ```   function nextStep() {
+      if (myInterpreter.step()) {
+        window.setTimeout(nextStep, 0);
+      }
+    }
+    nextStep(); 
+```
+  
+Alternatively, if the code is known to be safe from infinite loops, it may be executed to completion by calling the run function once:
+```
+    myInterpreter.run();
+ ```
+In cases where the code encounters asynchronous API calls (see below), run will return true if it is blocked and needs to be reexecuted at a later time.
+
 /**
  * ============================================================================
  *                                 Jun 2022
