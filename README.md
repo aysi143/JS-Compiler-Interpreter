@@ -251,7 +251,7 @@ function parser(tokens) {
   return ast;
 }
 
-
+```
 
 ## Usage
 
