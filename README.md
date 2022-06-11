@@ -302,6 +302,10 @@ In cases where the code encounters asynchronous API calls (see below), run will 
 - [@bekalu](https://github.com/orgs/GObez-Ethiopia/people/bekalu23)
 - [@ebno](https://github.com/orgs/GObez-Ethiopia/people/Ebno1)
 
+
+##Disclaimer
+This project is not an official Google product, its not tasted on new interpreter.
+
  `Jun 2022`
  `   Gobez Ethiopia`
 
